@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ania"
+version = "0.0.0"
+description = "Search, enjoy and download anime in Spanish using the command line."
+authors = ["Miguel Amador <miguesdev@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+animeflv = "0.3.1"
+termcolor = "2.3.0"
+cloudscraper = "1.2.71"
+bs4 = "0.0.1"
+lxml = "4.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
