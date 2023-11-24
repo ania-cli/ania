@@ -1,7 +1,8 @@
 from .ui import clear, printb, get_number
 from termcolor import colored
+from .utils import Anime
 
-def select_anime(animes, search):
+def select_anime(animes: list[Anime], search: str):
   # UI
   clear()
   printb(f'Se encontraron {len(animes)} resultados para "{search}":')

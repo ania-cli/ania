@@ -3,7 +3,7 @@ import tty, sys, termios
 from .utils import  Anime
 from .ui import clear, printb, error
 
-def search_anime(anime_name):
+def search_anime(anime_name: str):
   api = AnimeFLV()
 
   clear()
