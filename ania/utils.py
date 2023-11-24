@@ -1,6 +1,6 @@
-import os
-
-def clear():
-  clear = "clear" if os.name == "posix" else "cls"
-  os.system(clear)
-
+class Anime:
+  def __init__(self, id, title, type):
+    self.id = id
+    self.title = title
+    self.type = type
+  
