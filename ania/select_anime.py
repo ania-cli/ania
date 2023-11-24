@@ -3,6 +3,16 @@ from termcolor import colored
 from .utils import Anime
 
 def select_anime(animes: list[Anime], search: str):
+  """
+  Muestra una lista de animes y permite al usuario seleccionar uno.
+
+  Args:
+      animes (List[Anime]): La lista de objetos Anime a mostrar.
+      search (str): La cadena de búsqueda que generó la lista de animes.
+
+  Returns:
+      int: El ID del anime seleccionado por el usuario.
+  """
   # UI
   clear()
   printb(f'Se encontraron {len(animes)} resultados para "{search}":')

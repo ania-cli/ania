@@ -4,6 +4,15 @@ from .utils import  Anime
 from .ui import clear, printb, error
 
 def search_anime(anime_name: str):
+  """
+  Busca animes por nombre utilizando la librearía animeflv-api
+
+  Args:
+      anime_name (str): El nombre del anime a buscar.
+
+  Returns:
+      List[Anime]: Una lista de objetos Anime con los resultados de la búsqueda.
+  """
   api = AnimeFLV()
 
   clear()
