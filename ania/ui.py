@@ -38,7 +38,7 @@ def error(msg: str, clear: bool = True ,exit: bool = True):
   """
   if clear:
     clear()
-  print(colored(f'Error: {str}', 'red', attrs=['bold']))
+  print(colored(f'Error: {msg}', 'red', attrs=['bold']))
 
   if exit:
     exit(1)
