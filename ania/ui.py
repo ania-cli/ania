@@ -27,20 +27,21 @@ def get_input(msg: str):
   
   return ' '.join(user_input)
 
-def error(msg: str, clear: bool = True ,exit: bool = True):
+def error(msg: str, cls: bool = True , kill: bool = True):
   """
   Muestra un mensaje de error y, opcionalmente, limpia la pantalla y sale del programa.
 
   Args:
       msg (str): El mensaje de error.
-      clear (bool): Indica si se debe limpiar la pantalla. Por defecto es True.
-      exit (bool): Indica si se debe salir del programa. Por defecto es True.
+      cls (bool): Indica si se debe limpiar la pantalla. Por defecto es True.
+      kill (bool): Indica si se debe salir del programa. Por defecto es True.
   """
-  if clear:
+  if cls:
     clear()
+    
   print(colored(f'Error: {msg}', 'red', attrs=['bold']))
 
-  if exit:
+  if kill:
     exit(1)
 
 def printb (msg: str, color: str ='cyan'):
