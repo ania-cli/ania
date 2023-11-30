@@ -69,13 +69,13 @@ def get_number(msg: str, max_len: int):
   user_input = input(colored(msg, 'cyan', attrs=['bold']))
   
   if not user_input.isdigit():
-    error('Debe ser un numero', clear=False, exit=False)
+    error('Debe ser un numero', cls=False, kill=False)
     return get_number(msg, max_len)
 
   user_input = int(user_input)
 
   if user_input < 1 or user_input > max_len:
-    error(f'Debe estar en rango de 1 a {max_len}', clear=False, exit=False)
+    error(f'Debe estar en rango de 1 a {max_len}', cls=False, kill=False)
     return get_number(msg, max_len)
 
   return user_input - 1
