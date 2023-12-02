@@ -26,7 +26,8 @@ def select_episode(anime: Anime):
       continue
   
   if anime_info is None:
-    error(f'No se pudo cargar la informacion de "{anime.title}" {anime.id}')
+    error(f'No se pudo cargar la informacion de "{anime.title}"')
+    
   clear()
   printb(f'{anime_info.title}')
   print(f'Episodios: {len(anime_info.episodes)}'); print()
