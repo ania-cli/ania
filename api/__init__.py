@@ -1,7 +1,7 @@
 import cloudscraper
 import json, re
 
-from typing import Dict, List, Optional, Tuple, Type, Union
+from typing import Dict, List, Optional, Type, Union
 from types import TracebackType
 from bs4 import BeautifulSoup, Tag, ResultSet
 from urllib.parse import unquote, urlencode
@@ -287,6 +287,13 @@ class AnimeFLV(object):
         response = self._scraper.get(f"{ANIME_URL}/{id}")
         soup = BeautifulSoup(response.text, "lxml")
 
+        try:
+            anime_synopsis = soup.select_one(
+                "body div div div div div main section div.Description p"
+            ).string.strip()
+        except:
+            anime_synopsis = "No hay sinopsis disponible"
+
         information = {
             "title": soup.select_one(
                 "body div.Wrapper div.Body div div.Ficha.fchlt div.Container h1.Title"
@@ -296,9 +303,7 @@ class AnimeFLV(object):
             + soup.select_one(
                 "body div div div div div aside div.AnimeCover div.Image figure img"
             ).get("src", ""),
-            "synopsis": soup.select_one(
-                "body div div div div div main section div.Description p"
-            ).string.strip(),
+            "synopsis": anime_synopsis,
             "rating": soup.select_one(
                 "body div div div.Ficha.fchlt div.Container div.vtshr div.Votes span#votes_prmd"
             ).string,
