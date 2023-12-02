@@ -1,4 +1,4 @@
-from animeflv import AnimeFLV
+from api import AnimeFLV
 import tty, sys, termios
 from .utils import  Anime
 from .ui import clear, printb, error

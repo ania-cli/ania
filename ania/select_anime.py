@@ -4,14 +4,14 @@ from .utils import Anime
 
 def select_anime(animes: list[Anime], search: str):
   """
-  Muestra una lista de animes y permite al usuario seleccionar uno.
+  Muestra una lista de animes encontrados y permite al usuario seleccionar uno.
 
-  Args:
-      animes (List[Anime]): La lista de objetos Anime a mostrar.
-      search (str): La cadena de búsqueda que generó la lista de animes.
+  Parameters:
+  - animes (list[Anime]): Lista de objetos Anime que coinciden con la búsqueda.
+  - search (str): Término de búsqueda utilizado para filtrar los animes.
 
   Returns:
-      int: El ID del anime seleccionado por el usuario.
+  - Anime: Objeto Anime seleccionado por el usuario.
   """
   # UI
   clear()
@@ -34,4 +34,4 @@ def select_anime(animes: list[Anime], search: str):
   print()
   anime = get_number('Introducir numero: ', max_len=len(animes))
   
-  return animes[anime].id
+  return animes[anime]
