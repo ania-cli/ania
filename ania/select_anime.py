@@ -1,5 +1,4 @@
-from .ui import clear, printb, get_number
-from termcolor import colored
+from .ui import clear, printb, get_number, numberf
 from .utils import Anime
 
 def select_anime(animes: list[Anime], search: str):
@@ -20,15 +19,11 @@ def select_anime(animes: list[Anime], search: str):
   
   longest_title = len(max([anime.title for anime in animes], key=len))
   
-  for i, anime in enumerate(animes):
-
-    number = f'[{i+1}]'
-    number = colored(f'{number.ljust(4)}', 'yellow')
-    
+  for i, anime in enumerate(animes):    
     anime_title = anime.title.ljust(longest_title) 
 
     # UI
-    print(f'{number} {anime_title} ({anime.type})')
+    print(f'{numberf(i+1)} {anime_title} ({anime.type})')
 
   # UI
   print()
