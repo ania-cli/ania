@@ -52,8 +52,10 @@ def printb (msg: str, color: str ='cyan'):
       msg (str): El mensaje a imprimir.
       color (str): El color del texto. Por defecto es 'cyan'.
   """
-
-  print(colored(msg, color, attrs=['bold']))
+  if os.name == "posix":
+    print(colored(msg, color, attrs=['bold']))
+    
+    return msg
 
 def get_number(msg: str, max_len: int):
   """
@@ -79,3 +81,22 @@ def get_number(msg: str, max_len: int):
     return get_number(msg, max_len)
 
   return user_input - 1
+
+
+def numberf(number: int, color: str = 'yellow'):
+  """
+  Retorna una cadena formateada como un número con color.
+
+  Parameters:
+      number (int): Número a formatear.
+      color (str, optional): Color del número. Por defecto, 'yellow'.
+
+  Returns:
+      str: Cadena formateada con el número y color.
+  """
+  number = f'[{number}]'
+
+  if os.name == "posix":
+    return colored(number.ljust(4), color)
+  
+  return number.ljust(4)
