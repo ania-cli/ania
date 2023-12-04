@@ -1,15 +1,13 @@
 from ania import ania
-from ania.ui import clear, printb, error
+from ania.ui import clear, printb, error, bey
 
 if __name__ == '__main__':
     try:
         ania()
 
     except KeyboardInterrupt:
-        # UI
-        clear()
-        printb('Regresa pronto!')
-        exit(0)
+        bey()
+
 
 #    except Exception as e:
 #        error(e)

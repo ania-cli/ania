@@ -100,3 +100,8 @@ def numberf(number: int, color: str = 'yellow'):
     return colored(number.ljust(4), color)
   
   return number.ljust(4)
+
+def bey():
+  clear()
+  printb('Vuelve pronto!')
+  exit(0)
