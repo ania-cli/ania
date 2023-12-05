@@ -2,7 +2,7 @@ from .ui import clear, get_input, check_conection
 from .search_anime import search_anime
 from .select_anime import select_anime
 from .select_episode import select_episode
-from .select_server import select_server
+from .get_servers import get_servers
 
 def ania():
   """
@@ -14,4 +14,6 @@ def ania():
   animes = search_anime(search)
   anime = select_anime(animes, search)
   animei = select_episode(anime)
-  server = select_server(animei)
+  servers = get_servers(animei)
+  
+  print(servers)
