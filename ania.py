@@ -1,5 +1,5 @@
 from ania import ania
-from ania.ui import clear, printb, error, bey
+from ania.ui import error, bey
 
 if __name__ == '__main__':
     try:
