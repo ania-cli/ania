@@ -112,7 +112,10 @@ def check_conection():
   Verifica la conexión a Internet mediante una solicitud a 'google.com'.
   """
   try:
-    requests.get('https://google.com', timeout=5)
+    requests.get('https://google.com', timeout=10)
 
   except requests.ConnectionError:
-    error('oops no tienes conexion a internet')
+    error('no tienes conexion a internet')
+  
+  except requests.ReadTimeout:
+    error('no tienes conexion a internet')
