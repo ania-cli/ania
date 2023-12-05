@@ -105,3 +105,14 @@ def bey():
   clear()
   printb('Vuelve pronto!')
   exit(0)
+
+import requests
+def check_conection():
+  """
+  Verifica la conexión a Internet mediante una solicitud a 'google.com'.
+  """
+  try:
+    requests.get('https://google.com', timeout=5)
+
+  except requests.ConnectionError:
+    error('oops no tienes conexion a internet')
