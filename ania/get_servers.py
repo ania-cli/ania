@@ -1,4 +1,4 @@
-from api import AnimeFLV
+from .api import AnimeFLV
 from .ui import clear, error, printb
 from .utils import AnimeInfo
 
