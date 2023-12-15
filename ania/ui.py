@@ -101,7 +101,10 @@ def numberf(number: int, color: str = 'yellow'):
   
   return number.ljust(4)
 
-def bey():
+def bye():
+  """
+  Muestra un mensaje de despedida y sale del programa.
+  """
   clear()
   printb('Vuelve pronto!')
   exit(0)

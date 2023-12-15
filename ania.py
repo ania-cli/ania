@@ -1,12 +1,12 @@
 from ania import ania
-from ania.ui import error, bey
+from ania.ui import error, bye
 
 if __name__ == '__main__':
     try:
         ania()
 
     except KeyboardInterrupt:
-        bey()
+        bye()
 
 
 #    except Exception as e:

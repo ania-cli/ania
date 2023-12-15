@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from ania.ui import printb, clear, bey
+from ania.ui import printb, clear, bye
 from termcolor import colored
 
 port = 5666
@@ -43,4 +43,4 @@ def web_player(animei, servers):
       httpd.server_close()
       httpd.socket.close()
     finally:
-      bey()
+      bye()
