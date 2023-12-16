@@ -110,15 +110,15 @@ def bye():
   exit(0)
 
 import requests
-def check_conection():
+def check_connection():
   """
   Verifica la conexión a Internet mediante una solicitud a 'google.com'.
   """
   try:
-    requests.get('https://google.com', timeout=10)
+    requests.get('https://google.com', timeout=5)
 
   except requests.ConnectionError:
-    error('no tienes conexion a internet')
+    error('no tienes conexion a internet', cls=False)
   
   except requests.ReadTimeout:
-    error('no tienes conexion a internet')
+    error('no tienes conexion a internet', cls=False)
