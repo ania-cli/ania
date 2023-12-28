@@ -13,7 +13,7 @@ termcolor = "2.3.0"
 cloudscraper = "1.2.71"
 bs4 = "0.0.1"
 lxml = "4.9.3"
-jinja2 = "^3.1.2"
+flask = " 3.0.0"
 
 [tool.poetry.scripts]
 ania = "ania:run"
