@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ania"
-version = "0.0.0"
+version = "1.0.0"
 description = "Search, enjoy and download anime in Spanish using the command line."
 authors = ["Miguel Amador <miguesdev@gmail.com>"]
 license = "GPL-3.0"
