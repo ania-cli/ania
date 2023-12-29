@@ -1,12 +1,11 @@
-```
+```ruby
     /\         (_)      
    /  \   _ __  _  __ _ 
   / /\ \ | '_ \| |/ _` |
  / ____ \| | | | | (_| |
 /_/    \_\_| |_|_|\__,_|
 ```
-Busca, disfruta y descarga anime mediante la línea de comandos.
-
+Busca, disfruta y descarga anime mediante la línea de comandos en cualquier sistema operativo.
 ## Instalacion
 
 ```bash
@@ -25,7 +24,7 @@ Prerequisitos
 
 ```bash
 # Clonamos el repositorio
-git clone https://github.com/migueweb/ania.git
+git clone https://github.com/ania-cli/ania.git
 
 # Nos movemos al directorio 'ania'
 cd ania

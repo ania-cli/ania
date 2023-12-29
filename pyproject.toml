@@ -5,7 +5,7 @@ description = "Search, enjoy and download anime in Spanish using the command lin
 authors = ["Miguel Amador <miguesdev@gmail.com>"]
 license = "GPL-3.0"
 readme = "README.md"
-homepage = "https://github.com/migueweb/ania"
+homepage = "https://github.com/ania-cli/ania"
 
 [tool.poetry.dependencies]
 python = "^3.8"
