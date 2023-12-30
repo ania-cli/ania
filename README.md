@@ -6,8 +6,10 @@
 /_/    \_\_| |_|_|\__,_|
 ```
 <!-- Badges -->
-<img alt="Total Downlods" src="https://img.shields.io/pepy/dt/ania">
-<img alt="License" src="https://img.shields.io/pypi/l/ania">
+<div  styles="display: flex;">
+  <img alt="Total Downlods" src="https://img.shields.io/pepy/dt/ania">
+  <img alt="License" src="https://img.shields.io/pypi/l/ania">
+</div>
 <!-- End badges -->
 
 Busca, disfruta y descarga anime mediante la línea de comandos en cualquier sistema operativo.
