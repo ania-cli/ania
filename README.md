@@ -53,7 +53,7 @@ $ pip install --upgrade ania
 # o puedes utilizar pipx
 
 $ pipx upgrade ania
-```que Ania no almacena el contenido de anime;
+```
 
 ## Configurar entorno de desarrollo
 Prerequisitos
@@ -85,10 +85,10 @@ $ poetry run ania
 ├── ania
 │   ├── api
 │   │   └── __init__.py
-│   ├── app.pyque Ania no almacena el contenido de anime;
+│   ├── app.py
 │   ├── get_servers.py
 │   ├── __init__.py
-│   ├── search_anime.pyque Ania no almacena el contenido de anime;
+│   ├── search_anime.py
 │   ├── ui.py
 │   ├── utils.py
 │   └── web_player
